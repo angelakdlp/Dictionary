@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(217, 221, 229);
+    font-family:monospace;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    font-size: 48px;
+    font-family:monospace;
+}
+.search{
+    text-align: center;
+}
+.search input,
+.search button{
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+}
+input{
+    height: 30px;
+    width: 350px;
+    font-family:monospace;
+}
+button{
+    height: 35px;
+    width: 35px;
+    font-size: x-large;
+}
+#outputContainer {
+    margin: 20px 0px 20px 0px;
+    background-color: rgb(239, 240, 242);
+    text-align: center;
+    display: inline-block;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid rgb(58, 58, 58);
+    margin: 20px 0px 0px 0px;
+}
+
+.word {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.definition {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.example {
+    font-size: 14px;
+    color: #555;
+    margin: 0px 0px 20px 0px;
+}
+.partOfSpeech {
+    color: rgb(71, 71, 71); /* Change the color to your desired color */
+    font-size: 20px;
+    font-style: italic;
+}
+
+.definition {
+    font-size: 18px;
+    margin: 10px 10px 10px 10px;
+    counter-increment: definition-counter;
+}
+.definition::before {
+    content: counter(definition-counter) ". ";
+    font-weight: bold;
+    margin-right: 5px;
+}
